@@ -1,0 +1,110 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-color: black;
+    color: white;
+}
+main .card{
+    width: 300px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 20px;
+    margin: auto;
+    border: 1px solid rgb(0, 0, 0);
+    background-color:  hsl(0, 1%, 15%);
+    border-radius: 7px;
+
+}
+.avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+main .card h1{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.location{
+    font-size: 14px;
+    font-weight: 400;
+    color:  hsl(75, 94%, 57%);
+    
+}
+.bio{
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(233, 229, 229);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 8px;
+}
+.social-links{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    /* margin-top: 1rem; */
+
+}
+
+.social-links li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links li a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: hsl(0, 1%, 28%);
+    padding:10px;
+    border-radius: 4px;
+    display: block;
+    width: 20vw;
+    text-align: center;
+}
+/* .social-links li a:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: black;
+    transition: 0.3s; */
+/* } */
+
+
+.social-links li a:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: black;
+    transition: 0.3s;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    main .card {
+        width: 100%;
+        padding: 15px;
+    }
+    .social-links li a {
+        width: 100%;
+    }
+}
